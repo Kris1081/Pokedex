@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+html, body {
+    @apply w-full h-full bg-gray-100 font-sans text-gray-900;
+}
+
+body {
+    @apply min-h-screen flex flex-col;
+}
+
+#root {
+    @apply flex flex-col flex-1 min-h-full bg-white shadow-lg rounded-md mx-2 my-4 md:mx-auto md:max-w-[1025px];
+
+}
+
+header h1 {
+  @apply text-white font-extrabold text-2xl tracking-wide mb-2;
+}
+
+header {
+    @apply flex justify-between items-center px-6 py-3 bg-red-600 text-white shadow-md rounded-t-md;
+}
+
+header nav ul {
+    @apply flex gap-3;
+}
+
+header nav ul li a {
+    @apply inline-block px-3 py-1.5 bg-red-100 text-red-700 rounded shadow hover:bg-red-200 transition;
+}
+
+main {
+    @apply flex-1 p-6 bg-gray-50 rounded-b-md;
+}
+
+footer {
+    @apply bg-red-600 text-white text-center px-4 py-3 rounded-b-md mt-4;
+}
+
+.container {
+    @apply w-full px-2 md:mx-auto md:max-w-[1025px];
+}
+
+.half-panel {
+    @apply w-full flex flex-row gap-6;
+}
+
+.half-panel.inverted {
+    @apply md:flex-row-reverse;
+}
+
+.half-panel section {
+    @apply flex-1 w-full md:w-1/2 bg-white rounded-lg shadow-md p-4;
+}
+
+.half-panel section {
+    border: 2px solid #ef4444;
+}
+
+.half-panel img {
+    @apply rounded-lg shadow-lg max-w-full h-auto mx-auto;
+}
+
+.half-panel p {
+    @apply mt-2 text-gray-700 leading-relaxed;
+}
